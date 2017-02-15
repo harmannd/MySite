@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - My Web Apps</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-background navbar-fixed-top">
         <div class="container">
             <div class="row">
                 <div class="navbar-header">
@@ -18,15 +17,24 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div class="navbar-brand" id="homelogo">
-                        @Html.ActionLink("Home", "Index", new { controller = "Home", action = "Index" })
+                    <div class="navbar-brand" id="homelogo">                      
+                        @Html.ActionLink("Derek Harmann", "Index", new { controller = "Home", action = "Index" })
+                        <p>Entry Level Developer</p>
                     </div>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Rolodex", "Index", "Contacts")</li>
-                        <li>@Html.ActionLink("Resume", "Resume", "Home")</li>
-                    </ul>
+                <div class="side-navbar">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Web Apps <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Rolodex", "Index", "Contacts")</li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Resume", "Resume", "Home")</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

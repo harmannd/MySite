@@ -1,6 +1,44 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    color: #293037;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    background-color: #3388a9;  
+  }
+  .navbar-nav > li > a {
+      padding-right: 70px;
+  }
+  .navbar-nav a {
+      color: #293037;
+  }
+  .nav > li > a:hover, .nav > li > a:focus {
+      background-color: #45c1f1;
+  }
+  .nav .open > a {
+      background-color: #45c1f1;     
+  }
+  .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+      background-color: #45c1f1;
+  }
+  .navbar .dropdown-menu a {
+      color: #293037;
+  }
+}
+
+.navbar-background {
+    background-color: #fef4f1;
+}
+
+.navbar-toggle {
+    background-color: #3388a9;
+}
+
+.navbar-toggle span {
+    background-color: #293037;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -24,13 +62,26 @@ textarea {
 }
 
 #homelogo a {
-    color: #ffffff;
+    color: #45c1f1;
     float: left;
+    font-size: 40px;
 }
 
 #homelogo a:hover, a:focus {
     text-decoration: none;
-    color: #ffffff;
+    color: #3388a9;
+}
+
+#homelogo p {
+    color: #293037;
+    float: left;
+    font-size: 12px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+#resume h2, h3{
+    color: #ff6a00
 }
 
 #resume img {
@@ -60,4 +111,10 @@ textarea {
     height: 400px;
     max-height: 400px;
 }
+
+.side-navbar {
+    float: right;
+}
+
+
 
