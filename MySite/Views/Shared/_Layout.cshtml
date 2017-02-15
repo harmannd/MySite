@@ -11,30 +11,47 @@
 <body>
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="navbar-brand" id="homelogo">
-                    @Html.ActionLink("Home", "Index", new { controller = "Home", action = "Index" })
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand" id="homelogo">
+                        @Html.ActionLink("Home", "Index", new { controller = "Home", action = "Index" })
+                    </div>
                 </div>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Rolodex", "Index", "Contacts")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Rolodex", "Index", "Contacts")</li>
+                        <li>@Html.ActionLink("Resume", "Resume", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
+        <div class="row">
+            <hr />
+            <h3>Contact Info</h3>
+            <address>
+                <strong>Name:</strong> Derek Harmann <br />
+                <strong>Location:</strong> Green Bay, WI <br />
+                <strong>Cellphone:</strong> 920-676-1669 <br />
+                <strong>E-mail:</strong> derekhar2468@gmail.com <br />
+                <a href="https://github.com/harmannd">Github</a><br />
+                <a href="https://www.linkedin.com/in/derek-harmann-3b8731129/">Linkedin</a>
+            </address>
+        </div>
+        
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <div class="row">
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </div>
         </footer>
     </div>
 

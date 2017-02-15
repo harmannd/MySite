@@ -3,14 +3,6 @@
   <EntityType Name="Contact">
     <Key>
       <PropertyRef Name="ContactID" />
-      <PropertyRef Name="Name" />
-      <PropertyRef Name="Address" />
-      <PropertyRef Name="City" />
-      <PropertyRef Name="State" />
-      <PropertyRef Name="Phone" />
-      <PropertyRef Name="Email" />
-      <PropertyRef Name="Notes" />
-      <PropertyRef Name="Zipcode" />
     </Key>
     <Property Name="ContactID" Type="Guid" Nullable="false" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />

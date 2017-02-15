@@ -8,7 +8,7 @@ namespace MySite.Controllers {
             return View();
         }
 
-        public ActionResult Contact() {
+        public ActionResult Resume() {
             return View();
         }
     }
