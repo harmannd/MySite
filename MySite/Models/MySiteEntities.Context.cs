@@ -16,7 +16,7 @@ namespace MySite.Models
     public partial class MySiteDatabaseEntities : DbContext
     {
         public MySiteDatabaseEntities()
-            : base("name=MySiteDatabaseEntities")
+            : base("name=AzureDatabaseEntities")
         {
         }
     
