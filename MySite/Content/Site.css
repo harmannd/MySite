@@ -4,6 +4,7 @@ body {
     padding-bottom: 20px;
     color: #293037;
     font-family: Helvetica,Arial,sans-serif;
+    background-color: #fbece8;
 }
 
 h2, h3, a {
@@ -16,7 +17,7 @@ a:focus, a:hover {
 }
 
 .navbar-background {
-    background-color: #fef4f1;
+    background-color: #fbece8;
     padding-bottom: 10px;
 }
 
@@ -32,8 +33,8 @@ a:focus, a:hover {
    padding-top: 10px;
 }
 
-.navbar-fixed-top li {
-    padding-top: 30px;
+.side-navbar > li > a {
+    margin-top: 30px;
     font-weight: bold;
 }
 
@@ -77,6 +78,7 @@ a:focus, a:hover {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -126,6 +128,11 @@ textarea {
 .homegreeting p {
     margin-top: 40px;
     float: left;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 80%;
 }
 
 .thumbnail img {

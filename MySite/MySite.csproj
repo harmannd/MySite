@@ -171,7 +171,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\codewars.png" />
     <Content Include="Images\comingSoon.jpg" />
+    <Content Include="Images\linkedin.png" />
     <Content Include="Images\professional.jpg" />
     <Content Include="Images\rolodeximage.jpg" />
     <Content Include="Models\MySiteEntities.Context.tt">
