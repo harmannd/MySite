@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MySiteDatabaseEntities-Web.config Connection String" description="MySiteDatabaseEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.MySiteEntities.csdl|res://*/Models.MySiteEntities.ssdl|res://*/Models.MySiteEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DESKTOP-0I3DNN3\SQLEXPRESS;initial catalog=MySiteDatabase;user id=harmannd;password=EV-83x1m5c1lu5;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Derek\\Documents\\Visual\ Studio\ 2015\\Projects\\MySite\\MySite\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MySiteDatabaseEntities']/@connectionString" />
+  </parameter>
+  <parameter name="AzureDatabaseEntities-Web.config Connection String" description="AzureDatabaseEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.MySiteEntities.csdl|res://*/Models.MySiteEntities.ssdl|res://*/Models.MySiteEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=mysiteappsdbserver.database.windows.net;initial catalog=MySiteDatabase;user id=harmannd;password=EV-83x1m5c1lu5;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Derek\\Documents\\Visual\ Studio\ 2015\\Projects\\MySite\\MySite\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AzureDatabaseEntities']/@connectionString" />
+  </parameter>
+</parameters>
